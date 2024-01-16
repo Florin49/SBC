@@ -1,0 +1,129 @@
+h1{
+  text-align: center;
+  margin: 0 auto;
+  width:100vw;
+  
+}
+body{
+  
+  animation: wavy 1.25s infinite linear;
+}
+@keyframes wavy{
+  
+  0%{
+    background-image: linear-gradient(to right,purple,rgba(137, 43, 226, 0.4));
+  }
+  
+  10%{
+    background-image: linear-gradient(to right,rgba(128,0,128, 0.98),rgba(137, 43, 226, 0.42));
+  }
+  20%{
+    background-image: linear-gradient(to right,rgba(116, 1, 116, 0.96),rgba(137, 43, 226, 0.44));
+  }
+  30%{
+    background-image: linear-gradient(to right,rgba(108, 3, 108, 0.94),rgba(137, 43, 226, 0.46));
+  }
+  40%{
+    background-image: linear-gradient(to right,rgba(100, 5, 100, 0.92),rgba(137, 43, 226, 0.48));
+  }
+  50%{
+    background-image: linear-gradient(to right,rgba(83, 9, 83, 0.9),rgba(137, 43, 226, 0.5));
+  }
+  60%{
+    background-image: linear-gradient(to right,rgba(100, 5, 100, 0.92),rgba(137, 43, 226, 0.48));
+  }
+  70%{
+    background-image: linear-gradient(to right,rgba(108, 3, 108, 0.94),rgba(137, 43, 226, 0.46));
+  }
+  80%{
+    background-image: linear-gradient(to right,rgba(116, 1, 116, 0.96),rgba(137, 43, 226, 0.44));
+  }
+  90%{
+    background-image: linear-gradient(to right,rgba(128,0,128, 0.98),rgba(137, 43, 226, 0.42));
+  }
+  100%{
+    background-image: linear-gradient(to right,purple,rgba(137, 43, 226, 0.381));
+  }
+  
+}
+.Pacienti{
+  position:absolute;
+  clip-path: circle(60%);
+  background-image: linear-gradient(to right,rgb(33, 0, 85),rgb(27, 106, 140));
+  margin-top: 25dvh;
+  margin-left: 10dvw;
+  margin-right: 40dvw;
+  width:30dvw;
+
+ 
+}
+.Terapeuti{
+  position:absolute;
+  display: flex;
+  clip-path: circle(60%);
+  background-image: linear-gradient(to right,rgb(33, 0, 85),rgb(27, 106, 140));
+  margin-top: 25dvh;
+  margin-left: 55dvw;
+  margin-right: 80dvw;
+  width:30dvw;
+  padding-bottom: 10dvh;
+ 
+}
+.Radios{
+  position:relative;
+  padding-left: 3dvw;/**/
+  padding-top: 2vh;
+  padding-bottom:2vh;
+  display: flex-col;
+}
+img{
+  height: 20dvh;
+  width: 10dvw;
+  border-radius: 100%;
+}
+.image{
+  
+  display:flex-col;
+  transform: translateY(-110%);
+  position:fixed;
+  margin-left: 12dvw;
+  
+  
+  
+  /*filter: invert(100%);*/
+  
+}
+.image1{
+  
+  display:flex-col;
+  transform: translateY(20%);
+  position:relative;
+  margin-left: 5dvw;
+ 
+  
+  
+  /*filter: invert(100%);*/
+  
+}
+figcaption{
+  display:block;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  text-decoration:wavy;
+}
+
+label{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  
+  font-style:italic;
+  font-size: 24px;
+}
+h2{
+  font-size:32px;
+  
+}
+p{
+  text-align: center;
+}

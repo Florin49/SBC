@@ -1,0 +1,79 @@
+<psihologie>
+
+    <pacienti>
+        <pacient name="ion" terapeut="stamate"/>
+        <pacient name="maria" terapeut="velea"/>
+        <pacient name="george" terapeut="velea"/>
+        <pacient name ="alina" terapeut="stamate"/>
+    </pacienti>
+
+    <terapeuti>
+        <terapeut name="stamate"/>
+        <terapeut name="velea"/>
+    </terapeuti>
+
+    <stari>
+        <stare>
+            <pacient name="ion" />
+            <nivel_stres nivel="ridicat"/>
+        </stare>
+        <stare>
+            <pacient name="maria"/>
+            <nivel_stres nivel="mediu"/>
+        </stare>   
+        <stare>
+            <pacient name="george"/>
+            <nivel_stres nivel="scazut"/> 
+        </stare>
+        <stare>
+            <pacient name="alina"/>
+            <nivel_stres nivel="scazut"/>
+        </stare>
+    </stari>
+
+    <servicii>
+        <menire>
+            <terapeut name="stamate"/>
+            <serviciu name="terapie"/>
+        </menire>
+        <menire>
+            <terapeut name="velea"/>
+            <serviciu name="dezvoltare personala"/>
+        </menire>
+    </servicii>
+
+    <reguli>
+        <regula>
+            <if>
+                <pacient>x</pacient>
+                <nivel_stres>y</nivel_stres>
+                <peste>mediu</peste>
+                
+            </if>
+            <then>
+                <pacient>x</pacient>
+                <recomandare>mindfulness</recomandare>
+            </then>
+            <else>
+                <pacient>x</pacient>
+                <recomandare>activitate fizica </recomandare>
+            </else>
+        </regula>
+        <regula>
+            <if>
+                <pacient>x</pacient>
+                <relatie>pacient pentru</relatie>
+                <terapeut>y</terapeut>
+                
+            </if>
+                <pacient>x</pacient>
+                <terapeut>y</terapeut>
+                <colaboreaza>da</colaboreaza>
+            <then>
+                
+            </then>
+        </regula>
+    </reguli>
+
+</psihologie>
+
